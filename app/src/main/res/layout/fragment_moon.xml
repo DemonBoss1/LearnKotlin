@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.moon.MoonFragment" >
+
+    <EditText
+        android:id="@+id/bankCardNumber"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:hint="Номер карты"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:maxLength="16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Check"
+        app:layout_constraintEnd_toEndOf="@+id/bankCardNumber"
+        app:layout_constraintStart_toStartOf="@+id/bankCardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/bankCardNumber" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/checkButton"
+        app:layout_constraintStart_toStartOf="@+id/checkButton"
+        app:layout_constraintTop_toBottomOf="@+id/checkButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
