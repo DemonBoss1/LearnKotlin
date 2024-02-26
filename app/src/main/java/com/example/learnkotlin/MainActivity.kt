@@ -5,7 +5,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.learnkotlin.databinding.ActivityMainBinding
 
@@ -25,7 +24,7 @@ private lateinit var binding: ActivityMainBinding
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_home, R.id.navigation_moon, R.id.navigation_notifications))
+            R.id.navigation_home, R.id.navigation_moon, R.id.navigation_encoding_of_messages))
         navView.setupWithNavController(navController)
     }
 }
