@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_encoding_of_messages"
-        android:name="com.example.learnkotlin.ui.notifications.NotificationsFragment"
+        android:name="com.example.learnkotlin.ui.encoding.EncodingFragment"
         android:label="@string/title_encoding_of_messages"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_encoding" />
 </navigation>
